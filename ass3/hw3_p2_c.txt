@@ -1,0 +1,13 @@
+PROBLEM 3.2:
+B) we consider our loop invariant as being
+ at each iteration the array (vector) A[0...key-1] is always sorted.
+
+ We can consider this a loop invariant because
+ - before the loop : k is not initialized so we assume its true
+ - at each iteration of the loop :
+  the subarray (subvector) A[0..key-1] is always sorted
+ - at the end of the loop :
+  key = size-1, So the subarray A[0..size-1] consist of (size-1+1)=size sorted elements
+  and this is the initial size of our array
+
+  with this we have proven correctness of  our selection sort algorithm
